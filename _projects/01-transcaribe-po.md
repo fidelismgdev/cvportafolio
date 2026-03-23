@@ -2,7 +2,7 @@
 title: "Transcaribe — Sistema de Órdenes de Compra (TCBE-PO)"
 tags: ["Laravel", "PHP", "MySQL", "Google Authenticator"]
 link: ""
-image:
+image: https://transcaribe.net/wp-content/uploads/2023/02/imagen-logo.png
 order: 1
 ---
 

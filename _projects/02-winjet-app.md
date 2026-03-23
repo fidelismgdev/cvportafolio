@@ -2,7 +2,7 @@
 title: "Winjet — App Móvil Ferry Cozumel"
 tags: ["Android", "React Native", "Google Play"]
 link: "https://play.google.com/store/apps/details?id=com.informerojo"
-image:
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFwW5XhJZVT50x3mEw2Z7LDIKpFWOrxd_cg&s
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Fidelis Marketing Group — Portafolio de Sitios"
-tags: ["WordPress", "PHP", "Laravel", "JavaScript", "SEO"]
+tags: ["PHP", "Laravel", "JavaScript", "SEO"]
 link: "https://www.fidelismarketinggroup.com/"
 image:
 order: 5
