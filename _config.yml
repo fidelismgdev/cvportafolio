@@ -1,0 +1,33 @@
+# Site Settings
+title: Ricardo Torres | Desarrollador Web
+description: Portafolio profesional de Ricardo Torres — Desarrollador Web con experiencia en frontend y backend.
+url: "https://tu-usuario.github.io"
+baseurl: "/portfolio"
+author: Ricardo Torres
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /proyectos/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Excludes
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

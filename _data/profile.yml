@@ -1,0 +1,84 @@
+# =============================================
+# EDITA ESTE ARCHIVO CON TUS DATOS REALES
+# =============================================
+
+name: "Ricardo Torres"
+title: "Desarrollador Web"
+email: "tu-email@ejemplo.com"
+location: "México"
+bio: "Desarrollador Web apasionado por crear experiencias digitales elegantes y funcionales. Especializado en tecnologías frontend y backend modernas."
+
+# Redes Sociales
+social:
+  linkedin: "https://www.linkedin.com/in/ricardo-torres-2b9195ba/"
+  github: "https://github.com/tu-usuario"
+  # twitter: "https://twitter.com/tu-usuario"
+  # email: "tu-email@ejemplo.com"
+
+# Hero / Introducción
+hero:
+  greeting: "Hola, soy"
+  tagline: "Construyo experiencias web que importan."
+  cta_text: "Ver Proyectos"
+  cta_link: "#proyectos"
+
+# Habilidades — edita, agrega o quita según tu perfil
+skills:
+  - category: "Frontend"
+    items:
+      - name: "HTML5 / CSS3"
+        level: 90
+      - name: "JavaScript"
+        level: 85
+      - name: "React"
+        level: 80
+      - name: "Angular"
+        level: 75
+
+  - category: "Backend"
+    items:
+      - name: "Node.js"
+        level: 80
+      - name: "PHP"
+        level: 75
+      - name: "Python"
+        level: 70
+      - name: "SQL / MySQL"
+        level: 80
+
+  - category: "Herramientas"
+    items:
+      - name: "Git / GitHub"
+        level: 85
+      - name: "Docker"
+        level: 65
+      - name: "Firebase"
+        level: 70
+      - name: "Figma"
+        level: 60
+
+# Experiencia Laboral — edita con tu experiencia real
+experience:
+  - role: "Desarrollador Web"
+    company: "Tu Empresa Actual"
+    period: "2022 — Presente"
+    description: "Desarrollo de aplicaciones web modernas con enfoque en rendimiento y experiencia de usuario."
+    highlights:
+      - "Implementación de interfaces responsivas con React"
+      - "Integración de APIs RESTful"
+      - "Optimización de rendimiento web"
+
+  - role: "Desarrollador Frontend"
+    company: "Empresa Anterior"
+    period: "2020 — 2022"
+    description: "Creación de componentes UI reutilizables y mantenimiento de aplicaciones existentes."
+    highlights:
+      - "Migración de jQuery a frameworks modernos"
+      - "Diseño e implementación de sistema de diseño"
+
+# Educación
+education:
+  - degree: "Ingeniería en Sistemas / Computación"
+    school: "Tu Universidad"
+    period: "2016 — 2020"
+    description: "Enfoque en desarrollo de software y tecnologías web."

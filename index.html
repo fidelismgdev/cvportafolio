@@ -1,0 +1,161 @@
+---
+layout: home
+title: Ricardo Torres | Desarrollador Web
+---
+
+<!-- ======== HERO ======== -->
+<section class="hero">
+  <div class="container hero-content">
+    <p class="hero-greeting">{{ site.data.profile.hero.greeting }}</p>
+    <h1 class="hero-name">Ricardo<br><em>Torres</em></h1>
+    <p class="hero-tagline">{{ site.data.profile.hero.tagline }}</p>
+    <a href="{{ site.data.profile.hero.cta_link }}" class="hero-cta">
+      {{ site.data.profile.hero.cta_text }}
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M12 19l-4-4M12 19l4-4"/></svg>
+    </a>
+  </div>
+  <div class="hero-ornament"></div>
+</section>
+
+<!-- ======== SOBRE MÍ ======== -->
+<section class="about" id="sobre-mi">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">Sobre mí</div>
+        <h2 class="section-title">Creando soluciones<br>digitales con propósito</h2>
+        <p>{{ site.data.profile.bio }}</p>
+        <p>Me apasiona transformar ideas complejas en interfaces limpias y funcionales. Cada proyecto es una oportunidad para resolver problemas reales con código elegante.</p>
+      </div>
+      <div class="about-stats reveal stagger-children">
+        <div class="stat">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Proyectos completados</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Tecnologías</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Compromiso</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== HABILIDADES ======== -->
+<section class="skills" id="habilidades">
+  <div class="container">
+    <div class="section-label reveal">Habilidades</div>
+    <h2 class="section-title reveal">Stack técnico</h2>
+    <div class="skills-grid reveal">
+      {% for cat in site.data.profile.skills %}
+      <div class="skill-category">
+        <h3>{{ cat.category }}</h3>
+        {% for skill in cat.items %}
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-pct">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="{{ skill.level }}"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======== EXPERIENCIA ======== -->
+<section class="experience" id="experiencia">
+  <div class="container">
+    <div class="section-label reveal">Experiencia</div>
+    <h2 class="section-title reveal">Trayectoria profesional</h2>
+    <div class="timeline">
+      {% for job in site.data.profile.experience %}
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">{{ job.period }}</div>
+        <div class="timeline-role">{{ job.role }}</div>
+        <div class="timeline-company">{{ job.company }}</div>
+        <p class="timeline-desc">{{ job.description }}</p>
+        {% if job.highlights %}
+        <ul class="timeline-highlights">
+          {% for h in job.highlights %}
+          <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======== PROYECTOS ======== -->
+<section class="projects" id="proyectos">
+  <div class="container">
+    <div class="section-label reveal">Proyectos</div>
+    <h2 class="section-title reveal">Trabajo destacado</h2>
+    <div class="projects-grid">
+      {% for project in site.projects %}
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          {% if project.image %}
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" style="width:100%;height:100%;object-fit:cover;">
+          {% else %}
+          <span class="project-thumb-placeholder">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          {% endif %}
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            {% for tag in project.tags %}
+            <span class="project-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-desc">{{ project.excerpt | strip_html | truncate: 140 }}</p>
+          <a href="{{ project.url | relative_url }}" class="project-link">
+            Ver detalles
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======== CONTACTO ======== -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label" style="justify-content:center;">Contacto</div>
+      <h2 class="contact-title">¿Trabajamos <em>juntos</em>?</h2>
+      <p class="contact-subtitle">Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme.</p>
+      <div class="contact-links">
+        <a href="{{ site.data.profile.social.linkedin }}" target="_blank" class="contact-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="{{ site.data.profile.social.github }}" target="_blank" class="contact-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:{{ site.data.profile.email }}" class="contact-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
