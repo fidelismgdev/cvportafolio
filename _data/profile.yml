@@ -27,51 +27,50 @@ skills:
       - name: "HTML5 / CSS3 / Bootstrap / SASS"
         level: 90
       - name: "JavaScript / jQuery"
-        level: 85
-      - name: "React Native"
-        level: 75
+        level: 90
+      - name: "React.js / React Native"
+        level: 90
       - name: "Next.js"
-        level: 70
+        level: 90
 
   - category: "Backend"
     items:
       - name: "PHP / Laravel"
         level: 90
-      - name: "Node.js"
-        level: 75
-      - name: "API REST"
-        level: 85
+      - name: "Node.js / NestJS"
+        level: 90
+      - name: "API REST / Microservicios"
+        level: 90
       - name: "Python"
-        level: 55
+        level: 80
 
   - category: "Bases de Datos"
     items:
       - name: "MySQL"
-        level: 85
+        level: 90
       - name: "PostgreSQL"
-        level: 75
+        level: 90
       - name: "MongoDB"
-        level: 60
+        level: 80
 
   - category: "DevOps & Herramientas"
     items:
       - name: "Git / Bitbucket / Jira"
-        level: 85
+        level: 100
       - name: "Docker"
-        level: 65
+        level: 80
       - name: "Google Cloud / AWS"
-        level: 60
-      - name: "CPanel / WHM / Apache"
-        level: 70
+        level: 90
+     
 
   - category: "Ciberseguridad"
     items:
       - name: "Kali Linux / NMAP / OWASP"
-        level: 60
+        level: 80
       - name: "Metasploit / Hydra"
-        level: 50
+        level: 70
       - name: "Análisis forense (Volatility, Foremost)"
-        level: 50
+        level: 80
 
 # Experiencia Laboral
 experience:
@@ -84,13 +83,12 @@ experience:
       - "Integración de pasarelas de pago y sistemas de reservaciones"
       - "Mantenimiento y optimización continua de plataformas en producción"
 
-  - role: "Docente de Secundaria y Preparatoria"
-    company: "Instituto Partenón"
-    period: "Ago. 2022 — Jul. 2023"
+  - role: "Docente Preparatoria"
+    company: "Instituto Gardner Cozumel"
+    period: "Ago. 2025 — Actualidad"
     description: "Impartición de materias de informática e introducción a tecnologías de la información."
     highlights:
-      - "Informática I, II y III: paquetería Office, navegadores, tecnologías educativas"
-      - "Preparatoria: Tecnologías de la Información"
+      - "Informática I, II y III: paquetería Office, navegadores, tecnologías educativas, Tecnologías de la Información"
 
   - role: "Freelance Web Developer"
     company: "OYO Hotels México"
