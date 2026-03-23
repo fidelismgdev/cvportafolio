@@ -2,7 +2,7 @@
 title: "Aviomar AdvenTours — Plataforma Web Completa"
 tags: ["Laravel", "PHP", "API REST", "MySQL", "SEO"]
 link: "https://www.aviomar.com/"
-image: https://www.google.com/imgres?q=aviomar%20cozumel&imgurl=https%3A%2F%2Fwww.aviomar.com%2Fimg%2Faviomar200.png&imgrefurl=https%3A%2F%2Fwww.aviomar.com%2F&docid=sDP1z4TAIf_hwM&tbnid=nulJE6SeXFkuPM&vet=12ahUKEwj9xPiQjLeTAxWmJUQIHVgoHGAQnPAOegQIGhAB..i&w=200&h=200&hcb=2&ved=2ahUKEwj9xPiQjLeTAxWmJUQIHVgoHGAQnPAOegQIGhAB
+image: https://www.aviomar.com/img/logo.png
 order: 4
 ---
 
