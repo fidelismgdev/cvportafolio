@@ -60,6 +60,8 @@ skills:
         level: 90
       - name: "Google Cloud / AWS"
         level: 90
+      - name: "Heroku"
+        level: 90
      
 
   - category: "Ciberseguridad"
